@@ -8,16 +8,19 @@ Rather than relying on high-level deep learning frameworks, the model explicitly
 Pneumonia is a leading cause of mortality among children worldwide, and chest X-ray imaging is commonly used for diagnosis.  
 However, interpreting X-ray images requires clinical expertise and can be time-consuming. This project addresses the problem of automatically classifying chest X-ray images into pneumonia and normal cases using a CNN-based approach.
 
+
+## Key Findings
+- The CNN model successfully learned discriminative features from chest X-ray images.
+- Training and validation accuracy improved consistently during training.
+- Visualization of convolutional filters indicated meaningful low-level feature extraction from medical images.
+
+
 ## Approach
 - Implemented a custom CNN architecture using NumPy, including convolutional and pooling layers.
 - Constructed a data loading and preprocessing pipeline for grayscale chest X-ray images.
 - Trained the model using mini-batch gradient descent and evaluated classification performance.
 - Visualized learned convolutional filters to qualitatively assess feature extraction.
 
-## Key Findings
-- The CNN model successfully learned discriminative features from chest X-ray images.
-- Training and validation accuracy improved consistently during training.
-- Visualization of convolutional filters indicated meaningful low-level feature extraction from medical images.
 
 ## Code
 - `src/data_loader.py`: Loads and preprocesses chest X-ray images (grayscale conversion, resizing, label assignment).
